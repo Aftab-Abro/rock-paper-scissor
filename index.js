@@ -17,6 +17,25 @@ function getComputerChoice(){
 
 }
 
+function getPlayerChoice(){
+  let playerChoice = 
+  prompt('Select Rock, Paper or Scissor');
+  if(playerChoice === null ){
+      console.log();
+      return getPlayerChoice();
+  }   
+
+  switch(playerChoice){
+    case 'rock':
+    case 'paper':
+    case 'scissor':
+      return playerChoice;
+    default:
+      console.log('Invalid Input! Please Select appropriate option');
+      return getPlayerChoice();
+  }
+  
+}
 
 
 
