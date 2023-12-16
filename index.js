@@ -82,6 +82,18 @@ function playRound(playerSelection, computerSelection) {
    console.log(roundWinner);
 }
 
+function game(){
+  for(let i=1;i<=5; i++ ){
+      playRound(getPlayerChoice(),getComputerChoice());
+      console.log("player Score " + playerScore + "  "+"Computer Score  "+computerScore)
+  } 
+  
+  if(playerScore > computerScore)
+  console.log('Congratulations! You won the game.');
+  else
+  console.log('Oops! You lost the game. Better luck next time.');    
+}
 
+game();
 
 
